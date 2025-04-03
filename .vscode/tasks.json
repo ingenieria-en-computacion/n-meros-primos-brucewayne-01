@@ -1,0 +1,16 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar y Ejecutar NASM",
+            "type": "shell",
+            "command": "nasm -f elf32 primos.asm -o primos.o && ld -m elf_i386 primos.o -o primos && ./primos",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
